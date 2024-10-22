@@ -36,7 +36,7 @@ public class Tests : PageTest
     [Test]
     public async Task HasTitle()
     {
-        await Page.GotoAsync("https://playwfailright.dev");
+        await Page.GotoAsync("https://playwright.dev");
 
         await Expect(Page).ToHaveTitleAsync(new Regex("Playwright"));
 
