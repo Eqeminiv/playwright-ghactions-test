@@ -26,3 +26,4 @@ jobs:
       with:
         name: playwright-traces
         path: bin/Debug/net8.0/playwright-traces-test/Playwright.Tests.HasTitle.zip
+      if: ${{ always() }}
