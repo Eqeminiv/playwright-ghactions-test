@@ -25,5 +25,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: playwright-traces
-        path: bin/Debug/net8.0/playwright-traces-test/Playwright.Tests.HasTitle.zip
+        path: bin/Debug/net8.0/playwright-traces-test/
       if: ${{ failure() && steps.tests.conclusion == 'failure' }}
